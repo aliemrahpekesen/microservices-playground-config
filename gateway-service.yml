@@ -6,9 +6,7 @@ spring:
         enabled: DETECT
 
 server:
-  host: http://localhost
   port: 8080
-  path: ${server.host}:${server.port}
 
 eureka:
   client:
