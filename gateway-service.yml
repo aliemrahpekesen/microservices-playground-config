@@ -24,7 +24,7 @@ zuul:
       path: /google/**
       url: https://www.google.com/
       
- management:
+management:
   endpoints:
     web:
       exposure:
