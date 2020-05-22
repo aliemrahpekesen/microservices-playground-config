@@ -23,6 +23,9 @@ zuul:
     searchengine:
       path: /searchengine/**
       url: https://www.bing.com/
+    auth-service:
+      path: /auth-service/**
+      serviceId: auth-service
 
 management:
   endpoints:
