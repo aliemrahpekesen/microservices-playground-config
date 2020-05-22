@@ -6,7 +6,7 @@ spring:
         enabled: DETECT
 
 server:
-  port: 8087
+  port: 8080
 
 eureka:
   client:
@@ -20,6 +20,6 @@ eureka:
 
 zuul:
   routes:
-    test-service:
-      path: /google/**
+    google:
+      path: /searchengine/**
       url: https://www.google.com/
