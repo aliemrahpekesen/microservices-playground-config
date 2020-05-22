@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: gateway-service
+  output:
+    ansi:
+        enabled: DETECT
+
+server:
+  host: http://localhost
+  port: 8080
+  path: ${server.host}:${server.port}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+  instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:8080}
+    preferIpAddress: true
+
+zuul:
+  routes:
+    test-service:
+      path: /google/**
+      url: http://www.google.com
