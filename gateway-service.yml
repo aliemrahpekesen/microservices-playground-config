@@ -6,7 +6,7 @@ spring:
         enabled: DETECT
 
 server:
-  port: 8087
+  port: 8080
 
 eureka:
   client:
@@ -15,7 +15,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
   instance:
-    instanceId: ${spring.application.name}:${spring.application.instance_id:8087}
+    instanceId: ${spring.application.name}:${spring.application.instance_id:8080}
     preferIpAddress: true
 
 zuul:
