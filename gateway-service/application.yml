@@ -20,6 +20,6 @@ eureka:
 
 zuul:
   routes:
-    google:
+    searchengine:
       path: /searchengine/**
-      url: https://www.google.com/
+      url: https://www.bing.com/
