@@ -20,12 +20,6 @@ eureka:
 
 zuul:
   routes:
-    google:
+    test-service:
       path: /google/**
       url: https://www.google.com/
-      
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "health,info,refresh"
