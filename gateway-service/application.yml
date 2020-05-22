@@ -23,3 +23,9 @@ zuul:
     searchengine:
       path: /searchengine/**
       url: https://www.bing.com/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,refresh"
