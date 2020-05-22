@@ -17,15 +17,15 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${spring.application.instance_id:8080}
     preferIpAddress: true
-    
-management:
-  endpoints:
-    web:
-      exposure:
-        include: *
 
 zuul:
   routes:
     google:
       path: /google/**
       url: https://www.google.com/
+      
+ management:
+  endpoints:
+    web:
+      exposure:
+        include: *
