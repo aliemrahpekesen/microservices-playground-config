@@ -22,7 +22,7 @@ zuul:
   routes:
     google:
       path: /google/**
-      url: https://www.yahoo.com/
+      url: https://www.google.com/
       
 management:
   endpoints:
