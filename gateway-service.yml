@@ -26,6 +26,6 @@ management:
 
 zuul:
   routes:
-    test-service:
+    google:
       path: /google/**
-      url: http://www.google.com
+      url: https://www.google.com/
