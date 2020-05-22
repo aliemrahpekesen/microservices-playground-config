@@ -22,7 +22,7 @@ zuul:
   routes:
     searchengine:
       path: /searchengine/**
-      url: https://www.bing.com/
+      url: https://www.google.com/
 
 management:
   endpoints:
