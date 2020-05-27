@@ -15,7 +15,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
   instance:
-    instanceId: ${spring.application.name}:${spring.application.instance_id:8081}
+    instanceId: ${spring.application.name}:${spring.application.instance_id:10000}
     preferIpAddress: true
 
 management:
