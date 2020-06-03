@@ -1,2 +1,0 @@
-# microservices-demo
-demo arch
